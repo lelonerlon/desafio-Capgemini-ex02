@@ -1,10 +1,10 @@
 
 function verificaSenha() {
 
-    var numeros = /([0-9])/;
+    var numeros = /(?:.*?[0-9]{1})/;
     var alfabetoMaiusculo = /(?:.*?[A-Z]{1})/;
     var alfabetoMinusculo = /(?:.*?[A-Z]{1})/;
-    var chEspeciais = /([~,!,@,#,$,%,^,&,*,-,_,+,=,?,>,<])/;
+    var chEspeciais = /(?:.*?[~,!,@,#,$,%,^,&,*,-,_,+,=,?,>,<]{1})/;
     const senha = document.getElementById("password").value;
     var mensagensErro = document.getElementById("password-status");
 
